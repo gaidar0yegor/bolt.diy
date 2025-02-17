@@ -73,6 +73,8 @@ const gitInfo = getGitInfo();
 
 export default defineConfig((config) => {
   return {
+          allowedHosts: ['boltdiy-production-11bc.up.railway.app'],
+
     define: {
       __COMMIT_HASH: JSON.stringify(gitInfo.commitHash),
       __GIT_BRANCH: JSON.stringify(gitInfo.branch),
